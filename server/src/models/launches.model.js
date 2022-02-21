@@ -13,6 +13,10 @@ const launch = {
 
 launches.set(launch.flightNumber, launch);
 
+const getAllLaunches = () => {
+  return Object.fromEntries(launches)
+}
+
 module.exports = {
-  launches,
+  getAllLaunches,
 };
