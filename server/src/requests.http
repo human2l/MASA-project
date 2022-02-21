@@ -2,15 +2,38 @@
 GET http://localhost:8000/launches HTTP/1.1
 ###
 
-#
+#POST add new launch
 POST http://localhost:8000/launches HTTP/1.1
 content-type: application/json
 
 {
     "mission": "KAI123",
-    "rocket": "Kai Experimental IS1",
+    "rocket": "KAI Experimental IS1",
     "destination": "Kepler-186 f",
     "launchDate": "January 17, 2030"
+}
+###
+
+#POST add invalid new launch-1
+POST http://localhost:8000/launches HTTP/1.1
+content-type: application/json
+
+{
+    "mission": "KAI123",
+    "rocket": "KAI Experimental IS1",
+    "destination": "Kepler-186 f",
+    "launchDate": "wrong date"
+}
+###
+
+#POST add invalid new launch-2
+POST http://localhost:8000/launches HTTP/1.1
+content-type: application/json
+
+{
+    "mission": "KAI123",
+    "rocket": "KAI Experimental IS1",
+    "destination": "Kepler-186 f"
 }
 ###
 
