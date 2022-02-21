@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/human2l/MASA-project/issues"
   },
-  "homepage": "https://github.com/human2l/MASA-project#readme"
+  "homepage": "https://github.com/human2l/MASA-project#readme",
+  "dependencies": {
+    "morgan": "^1.10.0"
+  }
 }
