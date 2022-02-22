@@ -1,0 +1,23 @@
+
+#GET all planets
+GET http://localhost:8000/planets HTTP/1.1
+###
+
+#GET all launches
+GET http://localhost:8000/launches HTTP/1.1
+###
+
+#POST add new launch
+POST http://localhost:8000/launches HTTP/1.1
+content-type: application/json
+
+{
+    "mission": "KAI123",
+    "rocket": "KAI Experimental IS1",
+    "target": "Kepler-186 f",
+    "launchDate": "January 17, 2030"
+}
+###
+
+#DELETE launch by ID
+DELETE http://localhost:8000/launches/100 HTTP/1.1
