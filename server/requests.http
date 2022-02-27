@@ -12,12 +12,12 @@ POST http://localhost:8000/launches HTTP/1.1
 content-type: application/json
 
 {
-    "mission": "KAI123",
+    "mission": "KAI1234",
     "rocket": "KAI Experimental IS1",
-    "target": "Kepler-186 f",
+    "target": "Kepler-442 b",
     "launchDate": "January 17, 2030"
 }
 ###
 
 #DELETE launch by ID
-DELETE http://localhost:8000/launches/100 HTTP/1.1
+DELETE http://localhost:8000/launches/118 HTTP/1.1
