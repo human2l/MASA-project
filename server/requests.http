@@ -1,14 +1,14 @@
 
 #GET all planets
-GET http://localhost:8000/planets HTTP/1.1
+GET http://localhost:8000/v1/planets HTTP/1.1
 ###
 
 #GET all launches
-GET http://localhost:8000/launches HTTP/1.1
+GET http://localhost:8000/v1/launches HTTP/1.1
 ###
 
 #POST add new launch
-POST http://localhost:8000/launches HTTP/1.1
+POST http://localhost:8000/v1/launches HTTP/1.1
 content-type: application/json
 
 {
@@ -20,4 +20,4 @@ content-type: application/json
 ###
 
 #DELETE launch by ID
-DELETE http://localhost:8000/launches/118 HTTP/1.1
+DELETE http://localhost:8000/v1/launches/118 HTTP/1.1
