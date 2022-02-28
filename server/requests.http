@@ -30,8 +30,7 @@ content-type: application/json
 {
     "query": {},
     "options": {
-        "page": 2,
-        "limit":20,
+        "pagination": false,
         "populate": [
             {
                 "path": "rocket",
