@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/human2l/MASA-project#readme",
   "dependencies": {
+    "axios": "^0.26.0",
     "morgan": "^1.10.0"
   }
 }
