@@ -7,6 +7,10 @@ GET http://localhost:8000/v1/planets HTTP/1.1
 GET http://localhost:8000/v1/launches HTTP/1.1
 ###
 
+#GET all launches with pagination
+GET http://localhost:8000/v1/launches?limit=50&page=1 HTTP/1.1
+###
+
 #POST add new launch
 POST http://localhost:8000/v1/launches HTTP/1.1
 content-type: application/json

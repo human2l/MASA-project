@@ -81,8 +81,12 @@ const getLatestFlightNumber = async () => {
   return latestLaunch.flightNumber;
 }
 
-const getAllLaunches = async () => {
-  return await launchesDatabase.find({})
+const getAllLaunches = async (skip, limit) => {
+  return await launchesDatabase
+    .find({}, "-_id -__v")
+    .sort("flightNumber")
+    .skip(skip)
+    .limit(limit)
 }
 
 const saveLaunch = async (launch) => {
