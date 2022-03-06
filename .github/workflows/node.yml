@@ -15,7 +15,7 @@ jobs:
       matrix:
         # run on both 14 and 16 version of node in parallel
         node-version: [14.x, 16.x]
-        mongodb-version: ['4.4']
+        mongodb-version: ['5.0']
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: MongoDB in GitHub Actions
-        uses: supercharge/mongodb-github-action@1.6.0
+        uses: supercharge/mongodb-github-action@1.7.0
         with:
           mongodb-version: ${{ matrix.mongodb-version }}
       - run: npm install
