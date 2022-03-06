@@ -10,7 +10,7 @@ jobs:
       # set CI to true will let create-react-app notified to turn off watch mode of testing
       CI: true
       #PORT: 9000
-      MONGO_URL: mongodb://localhost:masa
+      MONGO_URL: mongodb://localhost/masa
     strategy:
       matrix:
         # run on both 14 and 16 version of node in parallel
